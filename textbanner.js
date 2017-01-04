@@ -67,7 +67,7 @@
         try 
         {
             if(options.speed != undefined) {
-                
+
                 if(options.speed == "slow") 
                 {
                     speed = 180;
@@ -79,6 +79,10 @@
                 if(options.speed == "fast")
                 {
                     speed = 60;
+                }
+                if(options.speed > 0)
+                {
+                    speed = options.speed;
                 }
             }
         }
