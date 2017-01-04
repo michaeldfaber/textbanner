@@ -1,0 +1,30 @@
+{
+  "name": "textbanner",
+  "version": "1.0.0",
+  "description": "A jQuery Plugin for a retro text banner animation.",
+  "main": "textbanner.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeldfaber/textbanner.git"
+  },
+  "keywords": [
+    "simple",
+    "easy",
+    "customizable",
+    "text",
+    "banner",
+    "script",
+    "animation",
+    "retro",
+    "jquery",
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "javascript"
+  ],
+  "author": "Michael Faber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaeldfaber/textbanner/issues"
+  },
+  "homepage": "https://github.com/michaeldfaber/textbanner#readme"
+}
