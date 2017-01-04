@@ -30,7 +30,8 @@ pre {
     padding: 8px 3px 8px 6px;
     color: #7e5e35;
     background: #F4F4AF;
-    border: 2px solid #cccccc;
+    border: 2px outset #a6a6a6;
+    box-shadow: 4px 4px 3px #cccccc;
     white-space: pre-wrap;
     font-size: 16px;
     font-weight: bold;
@@ -54,7 +55,8 @@ p {
 td {
     text-align: left;
     padding: 10px 25px 15px 10px;
-    border: 2px solid #cccccc;
+    border: 2px outset #a6a6a6;
+    box-shadow: 4px 4px 3px #cccccc;
     font-size: 18px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color:#3F6B03;
@@ -64,7 +66,7 @@ td {
     padding:0px;
 }
 #title {
-    margin: 0px;
+    margin: -10px 0px 0px 0px;
     padding: 145px 0px 90px 0px;
     width: 100%;
     border-radius: 8px;
@@ -87,19 +89,6 @@ td {
 #bannerbtn:hover {
     color: #3F6B03;
 }
-.demobtn{
-    color: #7e5e35;
-    background: #F4F4AF;
-    border: 2px outset #cccccc;
-}
-.demobtn:hover {
-    color: #7e5e35;
-    background: #F4F4AF;
-    border: 2px outset #cccccc;
-}
-.demo:hover {
-    cursor: pointer;
-}
 </style>
 <html>
 
@@ -110,7 +99,7 @@ td {
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
                 <h1 id="textbanner" align="center">textbanner.js</h1>
-                <p id="title-caption" align="center">A retro animation for headers and text</p>
+                <p id="title-caption" align="center">retro animation for headers and text</p>
                     <br />
                 <div align="center">
                     <div id="bannerbtn" class="btn btn-primary">Demo</div>
@@ -179,7 +168,7 @@ npm install textbanner
                     </tr>                    
                 </table>
                     <br />
-                <p><b id="cycledemo" class="demo">Click me</b> for two cycles of animation</p>
+                <p><b id="cycledemo" class="demo" style="font-size: 20px;">Click me</b> for two cycles of animation</p>
 <pre>
 &lt;p id="demo"&gt;Click me for two cycles of animation&lt;/p&gt;
 
@@ -206,7 +195,7 @@ npm install textbanner
 &lt;/script&gt;
 </pre>
                     <br />
-                <p id="perpetualdemo" class="demo">Perpetual Animation</p>
+                <p id="perpetualdemo" class="demo" style="font-size: 20px;">Perpetual Animation</p>
 <pre>
 &lt;p id="demo"&gt;textbanner.js&lt;/p&gt;
 
@@ -233,8 +222,8 @@ npm install textbanner
                     </tr>                    
                 </table>
                     <br />
-                <p><b id="largedemo" class="demo">Click me</b> for large growth</p>
-                <p><b id="smalldemo" class="demo">Click me</b> for small growth</p>
+                <p><b id="largedemo" class="demo" style="font-size: 20px;">Click me</b> for large growth</p>
+                <p><b id="smalldemo" class="demo" style="font-size: 20px;">Click me</b> for small growth</p>
 <pre>
 &lt;p id="demo"&gt;Click me for large growth&lt;/p&gt;
 &lt;p id="demo"&gt;Click me for small growth&lt;/p&gt;
@@ -264,7 +253,7 @@ npm install textbanner
                     <td>100</td>
                     <td>
                         The speed at which the character animations individually occur. Accepts "slow", "intermediate", "fast",
-                        as well as numerical values.
+                        as well as numerical values for custom speeds.
                     </td>
                 </tr>                    
             </table>
@@ -303,6 +292,13 @@ npm install textbanner
             growth: 110,
             cycles: 1
         });
+        setTimeout(function() {
+            $('#title-caption').textbanner({
+                speed: 45,
+                growth: 110,
+                cycles: 1
+            });
+        }, 1300)
         $('#bannerbtn').click(function() {
             $('#textbanner').textbanner({
                 speed: "intermediate",
