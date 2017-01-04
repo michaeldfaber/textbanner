@@ -7,9 +7,9 @@ Install using npm:
 
 Create a div:
 ~~~~
-<div id='textbanner'&gt;Hello World!></div>
-<h1 id='textbanner'&gt;Hello World!></div>
-<p id='textbanner'&gt;Hello World!></div>
+<div id='textbanner'>Hello World!</div>
+<h1 id='textbanner'>Hello World!></div>
+<p id='textbanner'>Hello World!</div>
 ~~~~
 
 Use jQuery to select element and call textbanner():
