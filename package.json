@@ -1,6 +1,6 @@
 {
   "name": "textbanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A jQuery Plugin for a retro text banner animation.",
   "main": "textbanner.js",
   "repository": {
