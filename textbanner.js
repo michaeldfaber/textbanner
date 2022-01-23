@@ -4,6 +4,7 @@
  * text-banner jQuery Plugin
  */
 
+import jQuery from "jquery";
 (function ( $ ) {
 
     $.fn.textbanner = function(options) {
@@ -89,7 +90,7 @@
         catch(e) { };
 
         //create spans of individual characters
-        for(i = 0; i < text.length; i++)
+        for(let i = 0; i < text.length; i++)
         {
             var letter = "<span id='letter" + i + "'>" + text.charAt(i) + "</span>"
             $(this).append(letter)
